@@ -4,7 +4,7 @@
     <meta charset="UTF 8">
     <tittle>Chapter 8 Exercises</tittle>
     <style>
-        td, th{
+        table, td, th{
             border: 1px solid #666;
         }
     </style>
@@ -58,14 +58,20 @@
 
 <h1>8.3 Exercises</h1>
 <table>
+    <tbody>
     <tr> 
         <td>apples</td>
-        <td rowspan="3"> oranges </td>
+        <td rowspan="3">oranges</td>
         <td>pears</td>
+    </tr>
+    <tr>
+        <td>bananas</td>
+        <td rowspan="2">pineapple</td>
     </tr>
     <tr>
         <td>lychees</td>
     </tr>
+</tbody>
 </table>
 
 <hr>
@@ -74,12 +80,20 @@
 
 <table>
     <caption>Your Content Here</caption>
+    <colgroup></colgroup>
+    <colgroup span="3"></colgroup>
+    <thead>
     <tr> 
-        <th rowspan="2"> </td>
+        <th rowspan="2"> </th>
         <th colspan="2"> A common header for two subheads</th>
         <th rowspan="2">Header 3</th>
-    </th>
-
+    </tr>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+</thead>
+<tbody>
     <tr>
         <th scope="row">Thing A</th>
         <td>data A1</td>
@@ -92,14 +106,13 @@
         <td>data B2</td>
         <td>data B3</td>
     </tr>
-    <tr>
-        <th scope="row">Thing C</th>
-        <td>data C1</td>
-        <td>data C2</td>
-        <td>data C3</td>
-    </tr>
-
-
+        <tr>
+            <th scope="row">Thing C</th>
+            <td>data C1</td>
+            <td>data C2</td>
+            <td>data C3</td>
+        </tr>
+        </tbody>
     </table>
 </body>
 </html>
